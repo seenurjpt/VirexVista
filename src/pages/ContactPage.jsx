@@ -83,11 +83,11 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      <section className="relative pt-28 md:pt-32 pb-12 md:pb-20 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
           {[...Array(3)].map((_, i) => (
@@ -115,7 +115,7 @@ const ContactPage = () => {
           ))}
         </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -133,14 +133,14 @@ const ContactPage = () => {
               </span>
             </motion.div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
               Let's Create Something{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Amazing
               </span>
             </h1>
 
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-6 md:mb-8 px-2">
               Have a project in mind? We'd love to hear from you. Send us a
               message and we'll respond as soon as possible.
             </p>
@@ -149,7 +149,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Info Cards */}
-      <section className="py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((info, index) => (
@@ -181,7 +181,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form & Map Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-12 md:py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -375,7 +375,7 @@ const ContactPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-12 md:py-20 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

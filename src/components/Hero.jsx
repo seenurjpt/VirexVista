@@ -10,7 +10,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-20 md:pt-0">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50 pt-24 md:pt-0">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(3)].map((_, i) => (

@@ -9,10 +9,13 @@ import './App.css';
 import { Toaster } from 'sonner';
 import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
+import AboutPage from './pages/AboutPage';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
 	return (
 		<Router>
+			<ScrollToTop />
 			<Routes>
 				<Route
 					path='/'
@@ -20,14 +23,7 @@ export default function App() {
 				/>
 				<Route
 					path='/about'
-					element={
-						<div className="min-h-screen flex items-center justify-center bg-gray-50">
-							<div className="text-center">
-								<h1 className="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
-								<p className="text-gray-600">Coming Soon...</p>
-							</div>
-						</div>
-					}
+					element={<AboutPage />}
 				/>
 				<Route
 					path='/contact'
