@@ -11,11 +11,13 @@ import LandingPage from './pages/LandingPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import ScrollToTop from './components/ScrollToTop';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function App() {
 	return (
 		<Router>
 			<ScrollToTop />
+			<WhatsAppButton />
 			<Routes>
 				<Route
 					path='/'
